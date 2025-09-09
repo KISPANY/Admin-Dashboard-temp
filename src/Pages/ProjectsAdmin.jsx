@@ -5,13 +5,13 @@ import { ProjectsData } from "../data/Projects_data";
 const ProjectsAdmin = () => {
     const [popUp, setPopUp] = useState(false);
 
-    const Ids = ProjectsData.map(ids => ids.id);
+    // const Ids = ProjectsData.map(ids => ids.id);
     const threeProjects = ProjectsData.slice(0, 3);
 
     return ( 
         <div className="project-page  align-items-start flex-column">
             {popUp && (
-                <div onClick={() => setPopUp(false)} className="popup center fixed">
+                <div onClick={() => setPopUp(false)} className="popup  fixed">
                     <div className="popup-content center flex-column">
                         <h1>Recent Projects</h1>
                         {threeProjects.map((data) => (
@@ -19,7 +19,7 @@ const ProjectsAdmin = () => {
                                 <img src={data.img} className="prj-img" />
                                 <div>
                                     <h2>{data.name}</h2>
-                                    <p>{data.client}</p>
+                                    <p>Client: {data.client}</p>
                                 </div>
                             </div>
                         ))}

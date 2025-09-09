@@ -50,12 +50,31 @@
 .popup-content {
     border-radius: 10px;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.77);
-    border: 0.3px solid rgba(255, 255, 255, 0.361);
+    background: var(--popup-bg);
+    border: var(--border-thin);
+    gap: 20px;
+    width: fit-content;
+}
+
+.popup-content h1 {
+    color: var(--maroon);
+    font-weight: 900;
+}
+
+.prj-data h2 {
+    color: aqua;
+    font-weight: 700;
+}
+
+.prj-data p {
+    color: rgba(0, 255, 255, 0.687);
+    font-weight: 400;
 }
 
 .prj-data {
     width: 300px;
+    background: var(--data-bg);
+    gap: 20px;
 }
 
 .prj-img {
