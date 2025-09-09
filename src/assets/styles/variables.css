@@ -1,4 +1,66 @@
 /* Dark Mode Variables */
 :root {
+  --bg-color: #121212;
+  --text-color: #f5f5f5;
+  --card-bg: #010513;
+  --p-text: #ffffff;
+  --section-color3: #12131a;
+  --blue-orange: rgb(247, 91, 18);
+  --blue-white: #fff;
+  --nav-text: #683eff;
+  --border-color: #333333;
+  --text-light: #7f8c8d;
+  --light-color: #0e0e0e;
+  --h1-color: #ffffff;
+  --h2-color: #ffffff;
+  --gradient5: radial-gradient(125% 125% at 50% 10%, #000000 40%, #072607 100%);
+  --nav-bar-color: #06050f;
+  --linear-gradient-h: radial-gradient(125% 125% at 50% 10%, #000000 40%, #0c0c17 100%);
+  --gradient1: linear-gradient(135deg, #013d1f, #202630);
+  --gradient2: linear-gradient(135deg, #002412, #101318);
+  --gradient4: radial-gradient(125% 125% at 50% 10%, #020204 40%, #030610 100%);
+  --gradient3: background-image:linear-gradient(to right, rgba(71,85,105,0.15) 1px, transparent 1px), linear-gradient(to bottom, rgba(71,85,105,0.15) 1px, transparent 1px), radial-gradient(circle at 50% 60%, rgba(236,72,153,0.15) 0%, rgba(168,85,247,0.05) 40%, transparent 70%);
+  --primary-color: #02096e;
+  /* --shadow: box-shadow: 0 2px 10px rgba(84, 203, 240, 0.527); */
+  --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --secondary-color: #2ecc71;
+  --white: #fff;
+  --black: #000;
   --transition: all 0.3s ease;
+}
+
+[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --card-bg: #c7c7d183;
+  --border-color: #e0e0e0;
+  --section-color1: #121212;
+  --section-color2: #5ab9828e;
+  --section-color3: #63fac854;
+  --nav-bar-color: #dce4fd;
+  --gradient5: radial-gradient(125% 125% at 50% 10%, #000000c3 40%, #072607c8 100%);
+  --gradient4: radial-gradient(125% 125% at 50% 10%, #010133c1 40%, #000000c1 100%);
+  --linear-gradient-h: radial-gradient(125% 125% at 50% 10%, #000000bc 40%, #010133b1 100%);
+  --nav-text: #131313;
+  --h1-color: #000000;
+  --blue-white: rgb(0, 0, 255);
+  --blue-orange: #090040;
+  /* rt */
+  --dark-color: #1e2d3b;
+  --light-color: #ecf0f1;
+  --text-color: #333;
+  --text-light: #7f8c8d;
+  --h2-color: #070808;
+  --p-text: #0f0e0e;
+  --white: #fff;
+  --black: #000;
+  --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --gradient1: linear-gradient(135deg, #00a050, #4e5e77);
+  --gradient2: linear-gradient(135deg, #008542, #434f64);
+  --transition: all 0.3s ease;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
