@@ -308,11 +308,11 @@
   align-items: center;
 }
 
-.align-items-left {
+.align-items-start {
   align-items: flex-start;
 }
 
-.align-items-right {
+.align-items-end {
   align-items: flex-end;
 }
 

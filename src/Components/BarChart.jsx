@@ -5,12 +5,12 @@ import {
 // import monthlyStats from '../data/MonthlyStats';
 
 const monthlyStats = [
-  { month: 'Jan', projects: 20, viewers: 400, contacts: 120 },
-  { month: 'Feb', projects: 50, viewers: 300, contacts: 100 },
-  { month: 'Mar', projects: 30, viewers: 200, contacts: 200 },
-  { month: 'Apr', projects: 78, viewers: 280, contacts: 100 },
-  { month: 'May', projects: 23, viewers: 190, contacts: 100 },
-  { month: 'Jun', projects: 38, viewers: 290, contacts: 100 },
+  { month: 'Jan', projects: 20, visits: 400, contacts: 120 },
+  { month: 'Feb', projects: 50, visits: 300, contacts: 100 },
+  { month: 'Mar', projects: 30, visits: 200, contacts: 200 },
+  { month: 'Apr', projects: 78, visits: 280, contacts: 100 },
+  { month: 'May', projects: 23, visits: 190, contacts: 100 },
+  { month: 'Jun', projects: 38, visits: 290, contacts: 100 },
 ];
 
 const Bar_Chart = () => {
@@ -23,7 +23,7 @@ const Bar_Chart = () => {
             <YAxis />
             <Tooltip />
             <Legend />
-            <Bar dataKey="viewers" fill="#8884d8" />
+            <Bar dataKey="visits" fill="#8884d8" />
             <Bar dataKey="projects" fill="#82ca9d" />
             <Bar dataKey="contacts" fill="rgb(167, 213, 2)" />
         </BarChart>
