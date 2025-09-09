@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -23,6 +24,7 @@ const Header = () => {
                     <span className="user-name">Kispany</span>
                     <div className="avatar">KPY</div>
                 </div>
+                <ThemeToggle />
             </div>
         </header>
     )

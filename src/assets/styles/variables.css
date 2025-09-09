@@ -2,7 +2,7 @@
 :root {
   --bg-color: #121212;
   --text-color: #f5f5f5;
-  --card-bg: #010513;
+  --card-bg: #000207;
   --p-text: #ffffff;
   --section-color3: #12131a;
   --blue-orange: rgb(247, 91, 18);
@@ -30,9 +30,9 @@
 }
 
 [data-theme="light"] {
-  --bg-color: #ffffff;
+  --bg-color: #d4d4d4;
   --text-color: #333333;
-  --card-bg: #c7c7d183;
+  --card-bg: #fffffffa;
   --border-color: #e0e0e0;
   --section-color1: #121212;
   --section-color2: #5ab9828e;
