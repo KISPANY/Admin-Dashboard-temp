@@ -1,0 +1,118 @@
+/* form-page */
+.form-page {
+  background: #020617;
+  background-image: linear-gradient(to right, rgba(71,85,105,0.15) 1px, transparent 1px), 
+    linear-gradient(to bottom, rgba(71,85,105,0.15) 1px, transparent 1px), 
+    radial-gradient(circle at 50% 60%, rgba(236,72,153,0.15) 0%, rgba(168,85,247,0.05) 40%, transparent 70%);
+  background-size: 40px 40px, 40px 40px, 100% 100%;
+  height: 100vh;
+  color: white;
+}
+
+/* login-page */
+
+.form {
+  border: rgba(255, 255, 255, 0.557) 0.3px solid;
+  padding: 40px;
+  border-radius: 10px;
+  gap: 0;
+  backdrop-filter: blur(1px);
+  font-size: 20px;
+  animation: kutokeakulia 1s linear;
+}
+
+.field-container {
+  gap: 20px;
+}
+
+.form-title {
+  color: white;
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.form-input {
+  background-color: transparent;
+  font-size: 20px;
+  padding: 2px;
+  z-index: 100;
+  position: relative;
+  border: none;
+  border-bottom: rgba(255, 255, 255, 0.461) solid 0.3px;
+  margin-top: -40px;
+  color: aqua;transition: var(--transition);
+}
+
+.form-input:focus,
+.form-input:not(:placeholder-shown) {
+  outline: none;
+  background-color: #02061753;
+  margin-top: -15px;
+}
+
+.form-btn {
+  backdrop-filter: blur(10px);
+  background-color: rgba(18, 1, 53, 0.3);
+  color: white;
+  border: rgba(255, 255, 255, 0.323) 0.2px solid;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  box-shadow: aqua 0 0 10px 0.3px;
+  transition: var(--transition);
+}
+
+.remember-me {
+  margin-top: -10px;
+  margin-bottom: -5px;
+}
+
+.form-change-link, .underline {
+  color: aqua;
+  font-size: 15px;
+  margin-top: -5px;
+  margin: auto;
+}
+
+.kupoteakulia {
+  animation: kupoteakulia 1s linear forwards;
+}
+
+@keyframes kupoteakulia {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+@keyframes kutokeakulia {
+  0% {
+    transform: translateX(-50vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+/* responsive */
+@media (max-width: 490px) {
+  .form {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  }
+  .form-page {
+    display: flex;
+  }
+}
