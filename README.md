@@ -24,5 +24,5 @@ Admin dashboard [https://admin-dashboard-temp.vercel.app/dashboard](https://admi
 
 #### Reachout
 
-`+225 792 148 408`\
+`+225 792 148 404`\
 `+225 659 418 404`
