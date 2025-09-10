@@ -19,13 +19,17 @@ const AdminDashboard = () => {
   return (
     <Router>
       <div className="admin-dashboard">
-        <Header />
+        <div className="header-div">
+          <Header />
+        </div>
         <div className="dashboard-content">
-          {sidebarOpen && (
-            <aside className="dashboard-sidebar">
-              <SideBar />
-            </aside>
-          )}
+          <div className="side-dash" >
+            {sidebarOpen && (
+              <aside className="dashboard-sidebar">
+                <SideBar />
+              </aside>
+            )}
+          </div>
           <Switch>
             <Route exact path="/dashboard/" component={Dashboard} />
             <Route path="/analytics" component={Analytics} />

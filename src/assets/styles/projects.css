@@ -154,3 +154,27 @@
     padding: 5px;
     border-radius: 5px;
 }
+
+
+@media (max-width: 1220px) {
+    .dashboard-sidebar {
+    width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .stats-container {
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        width: 250px;
+    }
+    
+    .dashboard-sidebar {
+    width: 200px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
