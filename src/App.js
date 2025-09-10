@@ -6,6 +6,7 @@ import Form from './Pages/Form';
 import './assets/styles/variables.css';
 import './assets/styles/animations.css';
 import './assets/styles/projects.css';
+import './assets/styles/message.css';
 
 function App() {
   return (

@@ -108,28 +108,6 @@ li .Link {
     color: #2c3e50;
 }
 
-.recent-activity {
-    background: var(--card-bg);
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.activity-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.activity-table th, .activity-table td {
-    padding: 0.75rem;
-    text-align: left;
-    border-bottom: 1px solid #eee;
-}
-
-.activity-table th {
-    color: #7f8c8d;
-    font-weight: 600;
-}
 
 .height-100 {
     height: 100%;
@@ -144,14 +122,15 @@ li .Link {
 
 .dashboard-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     padding: 1rem 2rem;
-    background: var(--card-bg);
+    background: var(--nav-bar-color);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: fixed;
     z-index: 1000;
+    gap: 50%;
 }
 
 .header-left {

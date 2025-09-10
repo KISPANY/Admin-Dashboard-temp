@@ -8,6 +8,8 @@ import { MessageData } from '../data/MessageData';
 
 
 const Dashboard = () => {
+    const unread = MessageData.slice(0, 3);
+
     return ( 
         <main className="dashboard-main">
               {/* Stats Overview */}
@@ -39,7 +41,7 @@ const Dashboard = () => {
                             <th>Date</th>
                         </tr>
                     </thead>
-                    {MessageData.map((index) => (
+                    {unread.map((index) => (
                         <tbody key={index} >
                             <tr>
                                 <td>{index.name}</td>

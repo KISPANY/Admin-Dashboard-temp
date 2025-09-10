@@ -3,7 +3,6 @@ import { MessageData } from "../data/MessageData";
 const MessagesAdmin = () => {
     return ( 
         <div className="recent-activity width-100">
-            <h3>Recent Messages</h3>
             <table className="activity-table">
                 <thead>
                     <tr>

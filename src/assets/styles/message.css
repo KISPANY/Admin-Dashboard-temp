@@ -1,0 +1,32 @@
+.recent-activity {
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.recent-activity h3 {
+    color: var(--black);
+}
+
+.activity-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--data-bg);
+    color: white;
+}
+
+.activity-table th, .activity-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.activity-table th {
+    color: #00eeff;
+    font-weight: 600;
+}
+
+.activity-table tbody td:nth-child(3) {
+    width: 20rem;
+}
