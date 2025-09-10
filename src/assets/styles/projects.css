@@ -4,6 +4,7 @@
     padding: 1.5rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     width: 100%;
+    gap: 60px;
 }
 
 .mon-stats {
@@ -79,4 +80,77 @@
 
 .prj-img {
     width: 100px;
+}
+
+/* project table */
+.project-table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    background: var(--card-bg);
+}
+
+.project-table th {
+    padding: 1rem;
+    border-top: var(--border-thin);
+    border-bottom: var(--border-thin);
+    color: var(--black);
+}
+
+.project-table td {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: var(--border-thin);
+    cursor: pointer;
+}
+
+.project-table td:nth-child(4) {
+    width: 20rem;
+    text-align: left;
+}
+
+.project-table tbody tr:nth-child(odd) {
+    background: var(--table-bg1);
+}
+
+.project-table tbody tr {
+    color: var(--black);
+}
+
+.project-table tbody tr:hover {
+    background: rgba(3, 9, 34, 0.655);
+    color: white;
+}
+
+.project-table tbody tr {
+    background: var(--table-bg2);
+}
+
+.add-btn {
+    color: rgb(255, 255, 255);
+    background-color: rgb(16, 134, 0);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px 0 10px 0;
+    border: none;
+}
+
+.edit-btn {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 132, 0);
+    width: 50px;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.delete-btn {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 72, 0);
+    width: 50px;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
 }

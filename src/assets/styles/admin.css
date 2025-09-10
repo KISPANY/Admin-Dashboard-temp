@@ -79,12 +79,12 @@ li .Link {
 .stat-info h3 {
     margin: 0;
     font-size: 1.8rem;
-    color: #2c3e50;
+    color: var(--h2-color);
 }
 
 .stat-info p {
     margin: 0.25rem 0 0;
-    color: #7f8c8d;
+    color: var(--text-color);
 }
 
 /* charts style */
@@ -141,7 +141,7 @@ li .Link {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: white;
+    background: var(--card-bg);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 

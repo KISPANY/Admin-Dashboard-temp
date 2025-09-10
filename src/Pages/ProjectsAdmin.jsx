@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Bar_Chart from "../Components/BarChart";
 import { ProjectsData } from "../data/Projects_data";
+import ProjectTable from "../Components/Project_table";
 
 const ProjectsAdmin = () => {
     const [popUp, setPopUp] = useState(false);
@@ -62,6 +63,7 @@ const ProjectsAdmin = () => {
                     </div>
                 </div>
             </div>
+            <ProjectTable />
         </div>
      );
 }
