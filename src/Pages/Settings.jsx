@@ -1,10 +1,31 @@
+import { Link, BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import GeneralSettings from "../Components/General_settings";
+import Profile from "../Components/Profile";
+import Notification from "../Components/Notification";
+import Appearance from "../Components/Appearance";
+import Team from "../Components/Team";
+
 const Settings = () => {
     return ( 
-        <div className="width-100 flex-column center">
-            <h1 className="black weight-800">Oops This feature is under-development</h1>
-            <p className="black weight-600 text-align-center">we are working hard to bring this feature, Stay Tuned!<br/>😉</p>
-            <p>Reach Out +255 659 428 404</p>
-        </div>
+        <section className="width-100 flex-column align-items-top">
+            <nav className="settings-nav width-100">
+                <ul>
+                    <li><Link className="link" to="/settings/">General</Link></li>
+                    <li><Link className="link" to="/settings/profile" >Profile</Link></li>
+                    <li><Link className="link" to="/appearance">Appearance</Link></li>
+                    <li><Link className="link" to="/notification">Notifications</Link></li>
+                    <li><Link className="link" to="/team">Team</Link></li>
+                </ul>
+            </nav>
+            <Router>
+                <Switch>
+                    <Route path="/settings/" component={ GeneralSettings } />
+                    <Route exact path="/notification" component={ Notification } />
+                    <Route exact path="/appearance" component={ Appearance } />
+                    <Route exact path="/team" component={ Team } />
+                </Switch>
+            </Router>
+        </section>
      );
 }
  

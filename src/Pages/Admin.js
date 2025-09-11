@@ -11,6 +11,7 @@ import ProjectsAdmin from './ProjectsAdmin';
 import MessagesAdmin from './Messages';
 import Settings from './Settings';
 import Analytics from './Analytics';
+import Profile from '../Components/Profile';
 
 
 const AdminDashboard = () => {
@@ -37,6 +38,7 @@ const AdminDashboard = () => {
             <Route exact path="/messages" component={MessagesAdmin} />
             <Route exact path="/settings" component={Settings} />
           </Switch>
+          <Route path="/settings/profile" component={ Profile } />
         </div>
       </div>
     </Router>

@@ -7,6 +7,7 @@ import './assets/styles/variables.css';
 import './assets/styles/animations.css';
 import './assets/styles/projects.css';
 import './assets/styles/message.css';
+import './assets/styles/settings.css';
 
 function App() {
   return (

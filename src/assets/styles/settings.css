@@ -1,0 +1,59 @@
+.settings-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--bg-color);
+    border-bottom: var(--border-thin);
+    height: 100%;
+}
+
+.settings-nav li {
+    cursor: pointer;
+    /* background: var(--tag-bg); */
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom: var(--border-thin);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.settings-nav li:hover {
+    text-decoration: underline var(--black);
+    background: var(--popup-bg);
+}
+
+/* general setings styles */
+.general-settings {
+    padding-top: 30px;
+    gap: 50px;
+    margin-top: 30px;
+    color: var(--black);
+}
+
+.general-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 50px;
+    color: var(--text-color);
+    gap: 20px;
+}
+
+.general-grid div:nth-child(3) {
+    grid-column: span 2;
+    gap: 50px;
+}
+
+.general-grid div {
+    background: var(--card-bg);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.general-grid div h2 {
+    color: var(--black);
+}
