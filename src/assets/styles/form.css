@@ -21,12 +21,14 @@
   animation: kutokeakulia 1s linear;
 }
 
-.field-container {
-  gap: 20px;
-}
-
 .form-title {
-  color: white;
+  color: rgb(0, 0, 0);
+  text-shadow: 
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #00ffff,
+    0 0 30px #00ffbf,
+    0 0 40px #ff00de;
   font-size: 50px;
   font-weight: 800;
   margin-bottom: 20px;
@@ -42,6 +44,7 @@
   border-bottom: rgba(255, 255, 255, 0.461) solid 0.3px;
   margin-top: -40px;
   color: aqua;transition: var(--transition);
+  width: 200px;
 }
 
 .form-input:focus,
@@ -58,6 +61,7 @@
   border: rgba(255, 255, 255, 0.323) 0.2px solid;
   padding: 5px;
   border-radius: 5px;
+  font-size: 20px;
   cursor: pointer;
 }
 

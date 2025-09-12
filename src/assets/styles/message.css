@@ -1,5 +1,4 @@
 .recent-activity {
-    background: var(--card-bg);
     border-radius: 8px;
     padding: 1.5rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
@@ -23,7 +22,7 @@
 }
 
 .activity-table th {
-    color: #00eeff;
+    color: #00ff88;
     font-weight: 600;
 }
 

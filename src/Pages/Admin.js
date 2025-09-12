@@ -12,25 +12,48 @@ import MessagesAdmin from './Messages';
 import Settings from './Settings';
 import Analytics from './Analytics';
 import Profile from '../Components/Profile';
+import ThemeToggle from '../Components/ThemeToggle';
+import sbr from '../assets/images/sidebar.webp'
 
 
 const AdminDashboard = () => {
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
     <Router>
       <div className="admin-dashboard">
         <div className="header-div">
-          <Header />
+          <header className="dashboard-header">
+                 {/* Header */}
+            <div className="header-left center">
+                <button 
+                    className="menu-toggle" 
+                    onClick={() => setSidebarOpen(!sidebarOpen)}
+                >
+                  <img src={sbr} width={30} />
+                </button>
+                <h1>Kispan Admin</h1>
+            </div>
+            <div className="header-right">
+                <div className="search-box">
+                    <input type="text" placeholder="Search..." />
+                </div>
+                <div className="user-profile">
+                    <span className="user-name">Kispany</span>
+                    <div className="avatar">KPY</div>
+                </div>
+                <ThemeToggle />
+            </div>
+          </header>
         </div>
         <div className="dashboard-content">
-          <div className="side-dash" >
-            {sidebarOpen && (
-              <aside className="dashboard-sidebar">
-                <SideBar />
-              </aside>
-            )}
-          </div>
+          {/* {sidebarOpen && ( */}
+            <div className={`side-dash center ${sidebarOpen ? "open" : ""}`} >
+                <aside className="dashboard-sidebar center">
+                  <SideBar />
+                </aside>
+            </div>
+          {/* )} */}
           <Switch>
             <Route exact path="/dashboard/" component={Dashboard} />
             <Route path="/analytics" component={Analytics} />

@@ -17,22 +17,29 @@ const SignUp =() => {
     return (
         <form method='POST' className={onView}>
             <h1 className="form-title">Sign Up</h1>
-            <div className="center field-container">
-                <div className='flex-column'>
-                    <p className="lable">Enter User Name</p>
-                    <input type="text" required className="form-input" placeholder=" " />
-                </div>
-                <div className='flex-column'>
-                    <p className="lable">Enter Email</p>
-                    <input type="email" required className="form-input" placeholder=" " />
-                </div>
-                <div className='flex-column'>
-                    <p className="lable">Password</p>
-                    <input type="password" required className="form-input" placeholder=""/>
+            <div className="center flex-column gap-10">
+                <div className='flex-row gap-20 align-items-end'>
+                    <div className='flex-column'>
+                        <p className="lable">Enter User Name</p>
+                        <input type="text" required className="form-input" placeholder=" " />
+                    </div>
+                    <div className='flex-column'>
+                        <p className="lable">Phone N0: (optional)</p>
+                        <input type="text" className="form-input" placeholder=" " />
+                    </div>
+                </div><br />
+                <div className='flex-row gap-20 align-items-end'>
+                    <div className='flex-column'>
+                        <p className="lable">Enter Email</p>
+                        <input type="email" required className="form-input" placeholder=" " />
+                    </div>
+                    <div className='flex-column'>
+                        <p className="lable">Password</p>
+                        <input type="password" required className="form-input" placeholder=""/>
+                    </div>
                 </div>
                 <br/>
-                <button type="submit" className="form-btn width-100" >Submit</button>
-                <br/><br/>
+                <button type="submit" className="form-btn width-50" >Submit</button>     
                 <div className="flex">
                     <p className="form-change-link">Already have account? 
                         <Link
